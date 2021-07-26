@@ -130,3 +130,9 @@ const rollCaller = rollCall(["Victoria", "Juan", "Ruth"]);
 // rollCaller() // => should log 'Juan'
 // rollCaller() // => should log 'Ruth'
 // rollCaller() // => should log 'Everyone accounted for'
+
+function getEmptyRoom(rooms) {
+	rooms.reduce((a, c) => c.reduce((ac, cv) => cv));
+}
+
+getEmptyRoom(rooms);
